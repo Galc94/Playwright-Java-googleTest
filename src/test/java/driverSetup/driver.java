@@ -15,8 +15,9 @@ public class driver {
         try {
             Playwright playwright = Playwright.create();
             browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
-                    .setHeadless(false)
-                    .setSlowMo(2000)
+                    .setHeadless(false) // to follow the test in browser uncomment this line
+                    //.setSlowMo(2000) // slow down the test by 2 seconds
+                    .setTimeout(20000) // timeout in milliseconds
             );
             context = browser.newContext();
             page = context.newPage();
