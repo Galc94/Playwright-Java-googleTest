@@ -6,7 +6,12 @@ and simple integration of screenshots for failing scenarios.
 In addition, I added here some comments about how to implement for CI/CD with Jenkins and Docker files.
 please, try to replicate it from scratch by your self if you are starter with playwright java since most information is available for Node.js
 find more documentation about this incredible tool here: [Playwright-Java](https://playwright.dev/java/docs/intro)
-## How to use
+
+## pre-requisites and How to use
+my setup: 
+* *Apache Maven* ***3.6.3*** 
+* *Java version* ***1.8.0_202***
+
 Clone the Code in your own repo
 and modify files according your needs, like features or steps.
 
@@ -45,7 +50,8 @@ mvn verify "-DskipTests"
 ```
 if everything was ok, you should see a new folder at **src** level called `target` so going to `target/cucumber-html-report` and open in some browser the file `feature-overview.html`
 and this is what you should see:
-[Cucumber-JVM Report](src/test/resources/Cucumber-JVM Reports - Features Overview.jpg)
+
+![Cucumber-JVM Report](src/test/resources/Cucumber-JVM-Report.jpg)
 
 In addition, you can force the scenario to fail just to see how the screenshot in report works, so uncomment the line 34 of stepDefinition file.
 in the report you will find the screenshot as a png image in the After hook.
