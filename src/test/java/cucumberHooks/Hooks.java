@@ -10,13 +10,13 @@ import java.nio.file.Paths;
 
 public class Hooks {
     @Before
-    public void doSomethingBefore() {
+    public void Before() {
         //System.out.println(" -- Starting before -- ");
         driver.startDriver();
     }
 
     @After
-    public void doSomethingAfter(Scenario scenario){
+    public void After(Scenario scenario){
         if(scenario.isFailed()){
             String screenshotName = scenario.getName().replaceAll(" ", "_");
             final byte[] screenshot = driver.page.screenshot(new Page.ScreenshotOptions()
