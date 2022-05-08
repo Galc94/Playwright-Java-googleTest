@@ -6,6 +6,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import driverSetup.driver;
+import org.junit.Assert;
+
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class stepDefinition {
@@ -29,5 +31,6 @@ public class stepDefinition {
     @Then("En el title del navegador aparece la palabra clave")
     public void enElTitleDelNavegadorApareceLaPalabraClave() {
             assertThat(driver.page).hasTitle("Vanessa - Buscar con Google");
+            //Assert.fail();
     }
 }
