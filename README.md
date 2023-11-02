@@ -9,8 +9,8 @@ find more documentation about this incredible tool here: [Playwright-Java](https
 
 ## pre-requisites and How to use
 my setup: 
-* *Apache Maven* ***3.6.3*** 
-* *Java version* ***1.8.0_202***
+* *Apache  Maven* ***3.6.3*** 
+* *Java  version* ***1.8.0_202***
 
 Clone the Code in your own repo
 and modify files according your needs, like features or steps.
